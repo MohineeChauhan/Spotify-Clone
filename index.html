@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for Everyone</title>
+    <link rel="stylesheet" href="spotify.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="logo.png"/>
+</head>
+<body>
+    <div class="main"> 
+        <div class="sidebar">
+            <div class="outer">
+                <ul>
+                    <li id="home1">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                        <a >Home</a>
+                    </li>
+    
+                    <li class="search1">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                        <a>Search</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="outer2">
+                <header>
+                    <img src="asset/library_icon.png"/>
+                    <span>Your Library</span>
+                    <span class="material-symbols-outlined" id="outer2_add">
+                        add
+                    </span>
+                    <span id="forwd" class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+                </header>
+            <!-- <div>
+                <button>Artists</button>
+            </div> -->
+    
+                <div class="lib">
+                    <p  class="p1">Create your first playlist</p>
+                    <p  class="p2">it's easy, we'll help you</p>
+                    <button class="btn">Create playlist</button>
+                </div>
+    
+                <div class="lib">
+                    <p class="p1">Let's find some podcasts to follow</p>
+                    <p  class="p2">We'll keep you update on new follow</p>
+                    <button class="btn">Browse podcasts</button>
+                </div>
+            </div>
+
+        </div>
+
+       
+        <div class="main_content">
+            <nav class="navbar">
+                <header>
+                    <div class="head1">
+                        <img src="asset/backward_icon.png"/>
+                        <img src="asset/forward_icon.png"/>
+                    </div>
+                    <div class="head2">
+                    <button class="btn1">Explore Premium</button>
+
+                    <button class="btn2">
+                        <span id="icn" class="material-symbols-outlined">
+                            download
+                        </span>
+                        <span id="txt">Install App</span>
+                    </button>
+    
+                    <button class="btn3">
+                        <span class="material-symbols-outlined">
+                            notifications
+                        </span>
+                    </button>
+    
+                    <button class="btn4">
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span>
+                    </button>
+                    </div>
+                </header>
+
+                <div class="con_title">
+                    <button>All</button>
+                    <button>Music</button>
+                    <button>Podcast</button>
+                </div>
+            </nav>
+
+            <div class="albums">
+                <div class="recent">
+                    <div class="item">
+                        <div class="rec_img">
+                            <img src="asset/img1.jpg"/>
+                        </div>
+                        <div class="rec_ttl"> bollywood Dance Music</div>
+                        <div class="player">
+                            <img src="asset/player_icon3.png"/>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="rec_img">
+                            <img src="asset/img2.jpg"/>
+                        </div>
+                        <div class="rec_ttl">House Party Hits</div>
+                        <div class="player">
+                            <img src="asset/player_icon3.png"/>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="rec_img">
+                            <img src="asset/img3.jpg"/>
+                        </div>
+                        <div class="rec_ttl">BollyWood Mush</div>
+                        <div class="player">
+                            <img src="asset/player_icon3.png"/>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="rec_img">
+                            <img src="asset/img4.jpg"/>
+                        </div>
+                        <div class="rec_ttl">Atif Aslam</div>
+                        <div class="player">
+                            <img src="asset/player_icon3.png"/>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="rec_img">
+                            <img src="asset/img1.jpg"/>
+                        </div>
+                        <div class="rec_ttl">I-Pop Chill</div>
+                        <div class="player">
+                            <img src="asset/player_icon3.png"/>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="rec_img">
+                            <img src="asset/img1.jpg"/>
+                        </div>
+                        <div class="rec_ttl">Hot Hits HIndi</div>
+                        <div class="player">
+                            <img src="asset/player_icon3.png"/>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="rec_img">
+                            <img src="asset/img1.jpg"/>
+                        </div>
+                        <div class="rec_ttl">Happy Vibes</div>
+                        <div class="player">
+                            <img src="asset/player_icon3.png"/>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="rec_img">
+                            <img src="asset/img1.jpg"/>
+                        </div>
+                        <div class="rec_ttl">Happy Vibes</div>
+                        <div class="player">
+                            <img src="asset/player_icon3.png"/>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="album1">
+                    <div class="perlizd">
+                
+                        <div><a href="@">Made for You </a></div>
+                   
+                       <div class="show_all"><a href="@" >Show All</a></div>
+                    </div>
+        
+                
+                    <div class="alb_card">
+                        <div class="card">
+                            <img src="asset/card1img.jpeg"/>
+                            <div class="player">
+                                <img  src="asset/player_icon3.png"/>
+                            </div>
+                            <div class="discription">
+                                <h4>Top 50- India</h4>
+                                <div>Your daily update of the most played tracks right now - india.</div>
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <img src="asset/dailymix.jpg"/>
+                            <div class="player">
+                                <img  src="asset/player_icon3.png"/>
+                            </div>
+                            <div class="discription">
+                                <h4>Daily Mix 1</h4>
+                                <div>Badshah,Pritam,Vishal-Shekhar and more</div>
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <img src="asset/dailymix2.jpg"/>
+                            <div class="player">
+                                <img  src="asset/player_icon3.png"/>
+                            </div>
+                            <div class="discription">
+                                <h4>Daily Mix 2</h4>
+                                <div>Pritam,Arijit ,Sonu Nigam and more</div>
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <img src="asset/dm3.jpg"/>
+                            <div class="player">
+                                <img  src="asset/player_icon3.png"/>
+                            </div>
+                            <div class="discription">
+                                <h4>Daily Mix 3</h4>
+                                <div>Atif Aslam, Jatin-Lalit, Mame Khan and more</div>
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <img src="asset/card5img.jpeg"/>
+                            <div class="player">
+                                <img  src="asset/player_icon3.png"/>
+                            </div>
+                            <div class="discription">
+                                <h4>Top 50- Weekly Chart</h4>
+                                <div>Your daily update of the most played tracks right now - india.</div>
+                        </div>
+        
+                        </div>
+        
+                    </div>
+                </div>
+
+                <div class="album2">
+                    <div class="perlizd">
+                    
+                        <div><a href="@">More of what you like </a></div>
+                   
+                       <div class="show_all"><a href="@" >Show All</a></div>
+                    </div>
+        
+                
+                    <div class="alb_card">
+                        <div class="card">
+                            <img src="asset/sad hindi.jpg"/>
+                            <div class="player">
+                                <img  src="asset/player_icon3.png"/>
+                            </div>
+                            <div class="discription">
+                                <h4>Sad Hindi Melodies</h4>
+                                <div>Soulful tunes for the heart that has loved and lost. Cover - Tamasha</div>
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <img src="asset/guru.jpg"/>
+                            <div class="player">
+                                <img  src="asset/player_icon3.png"/>
+                            </div>
+                            <div class="discription">
+                                <h4>Punjabi X</h4>
+                                <div>Catch all the collaborations and crossover punjabi music. Cover - Guru Randhava</div>
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <img src="asset/emran.jpg"/>
+                            <div class="player">
+                                <img  src="asset/player_icon3.png"/>
+                            </div>
+                            <div class="discription">
+                                <h4>Starring Imran Hashmi</h4>
+                                <div>Essential tracks of Emraan Hashmi, all in one playlist.</div>
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <img src="asset/punjab.jpg"/>
+                            <div class="player">
+                                <img  src="asset/player_icon3.png"/>
+                            </div>
+                            <div class="discription">
+                                <h4>Punjab Mail</h4>
+                                <div>Travel First Class with Punjabi hits to Bollywood.</div>
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <img src="asset/alia.jpg"/>
+                            <div class="player">
+                                <img  src="asset/player_icon3.png"/>
+                            </div>
+                            <div class="discription">
+                                <h4>Starring Alia Bhatt</h4>
+                                <div>Essential tracks of Alia Bhatt all in one playlist</div>
+                        </div>
+        
+                        </div>
+        
+                    </div>
+                </div>
+
+                <div class="album3">
+                    <div class="perlizd">
+                    
+                        <div><a href="@">Your Favorite Artists</a></div>
+                   
+                       <div class="show_all"><a href="@" >Show All</a></div>
+                    </div>
+        
+                
+                    <div class="alb_card">
+                        <div class="card">
+                            <img src="asset/arijit.jpg"/>
+                            <div class="player">
+                                <img src="asset/player_icon3.png"/>
+                            </div>
+                            <div class="discription">
+                                <h4>Arijit Singh</h4>
+                                <div>artist</div>
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <img src="asset/kk.jpg"/>
+                            <div class="player">
+                                <img src="asset/player_icon3.png"/>
+                            </div>
+                            <div class="discription">
+                                <h4>KK</h4>
+                                <div>artist</div>
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <img src="asset/jubin.jpg"/>
+                            <div class="player">
+                                <img src="asset/player_icon3.png"/>
+                            </div>
+                            <div class="discription">
+                                <h4>Jubin Nautiyal</h4>
+                                <div>artist</div>
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <img src="asset/palak.jpg"/>
+                            <div class="player">
+                                <img src="asset/player_icon3.png"/>
+                            </div>
+                            <div class="discription">
+                                <h4>Palak Muchhal</h4>
+                                <div>artist</div>
+                            </div>
+                        </div>
+        
+                        <div class="card">
+                            <img src="asset/vishal-shekhar.jpg"/>
+                            <div class="player">
+                                <img src="asset/player_icon3.png"/>
+                            </div>
+                            <div class="discription">
+                                <h4>Vishal - Sekhar</h4>
+                                <div>artist</div>
+                        </div>
+        
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        
+            <br>
+            <br>
+            <br>
+        </div>  
+
+        <div class="music_play">
+           <div class="play">
+                <div  class="photo">
+                    <img src="asset/playing.jpg"/>
+                </div>
+                <div class="song">
+                    <p>Malang Sajna</p>
+                    <div>
+                        <a href="#">Sachet Tondon</a>
+                        <a href="#"> ParamPara Tondon</a>
+                        <a href="#">Kumaar</a>
+                    </div>
+                </div>
+                <button class="img">
+                        <img src="asset/album_icon1.png"/>
+                </button>
+               
+           </div>
+
+           <div class="playback_bar">
+                <div class="icon">
+                    <button>
+                        <img src="asset/player_icon1.png"/>
+                    </button>
+                    <button>
+                        <img src="asset/player_icon2.png"/>
+                    </button>
+                    <button id="pause">
+                        <img src="asset/player_icon3.png" height="25px" width="25px"/>
+                    </button>
+                    <button>
+                        <img src="asset/player_icon4.png"/>
+                    </button>
+                    <button>
+                        <img src="asset/player_icon5.png"/>
+                    </button>
+                </div>
+                <div class="player">
+                    <div class="curr_time">0:00</div>
+                    <input class="progress" type="range" min="0" max="15"/>
+                    <div class="tot_time">5:00</div>
+                </div>
+           </div>
+
+           <div class="control">
+                <button class="curr_song">
+                    <img src="asset/controls_icon1.png"/>
+                </button>
+                <button class="lyrics">
+                    <img src="asset/controld_icon2.png"/>
+                </button>
+                <button class="queue">
+                    <img src="asset/controls_icon3.png"/>
+                </button>
+                <button class="devices">
+                    <img src="asset/controls_icon4.png"/>
+                </button>
+                <button class="volume">
+                    <img src="asset/controls_icon5.png"/>
+                </button>
+                <button>
+                    <input class="progress" type="range" min="0" max="15"/>
+                </button>
+                <button class="miniplayer">
+                    <img src="asset/album_icon2.png"/>
+                </button>
+                <button class="fullscreen">
+                   
+                    <img src="asset/zoom.png"/>
+                </button>
+           </div>
+        </div>
+    </div>
+
+</body>
+</html>
