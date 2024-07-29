@@ -1,0 +1,620 @@
+body{
+    background-color: black;
+    overflow: hidden;
+   
+}
+
+*{
+    margin: 0px;
+}
+
+.main{
+    margin:0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+    display:flex;
+    height:100vh;
+    
+    /* width:100vh; */
+}
+
+.main .sidebar{
+    height:100vh;
+    width:390px;
+    color: white;
+    font-size: 18px;
+}
+
+.outer{
+    position:absolute;
+    left: 10px;
+    top:10px;
+    /* margin: 10px 0px 0px 5px; */
+    
+    line-height: 40px;
+    
+    background-color: rgba(43, 43, 43, 0.54);
+    height:100px;
+    width:380px;
+    box-shadow:0px 0px white;
+    border-radius: 10px;
+}
+
+.outer a{
+    padding-left: 10px;
+    opacity:0.7;
+    transition-duration: 0.5s;
+}
+
+/* .outer i{
+    opacity:0.7;
+} */
+ .outer span{
+    position: relative;
+    top:5px;
+    padding: 10px 0px 0px 20px;
+} 
+
+.outer span:hover{
+    opacity: 1;
+    cursor:pointer;
+} 
+
+.outer a:hover{
+    text-decoration: underline;
+    opacity: 1;
+    cursor: pointer;
+    /* font-size: 1.1em; */
+}
+
+.outer2{
+    position:absolute;
+    left: 10px;
+    top:125px;
+    /* margin: 5px 0px 0px 5px; */
+    /* margin: 30px 0px 0px 30px; */
+    line-height: 30px;
+    background-color: rgba(43, 43, 43, 0.54);
+    height:100em;
+    width:380px;
+   
+    box-shadow:0px 0px white;
+    border-radius: 10px;
+}
+
+.outer2 header{
+    padding: 20px;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 10px;
+}
+
+.outer2 header img,span{
+    opacity:0.7;
+    transition-duration: 0.5s;
+}
+.outer2 header img{
+    height:15px;
+    
+}
+
+.outer2 #forwd{
+    position: absolute;
+    left:340px;
+    /* top:20px; */
+    border-radius: 100%;
+    opacity: 1;
+    padding:0px;
+    transition-duration: 0.5s;
+}
+.outer2 header span{
+    padding-left:10px;
+}
+#outer2_add{
+    position: absolute;
+    left:300px;
+    padding: 0px;
+    border-radius: 100%;
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+#outer2_add:hover,#forwd:hover{
+    cursor: pointer;
+    
+    box-shadow: 0px 0px 2px white;
+}
+
+
+.outer2 header :hover{
+    cursor: pointer;
+    /* box-shadow: 0px 0px 4px white; */
+    opacity:1;
+}
+
+.outer2 button{
+    padding: 7px 14px;
+    margin:10px 0px;
+    /* color:white; */
+    border-radius: 20px;
+    
+    border-color:transparent ;
+    /* background-color: rgba(109, 107, 107, 0.2); */
+}
+
+.outer2 button:hover{
+    background-color: rgba(109, 107, 107, 0.4);
+}
+.lib{
+    border-radius: 10px;
+    line-height: 28px;
+    padding:20px;
+    margin: 10px;
+    background-color:  rgba(81, 81, 81, 0.3);
+}
+.lib .p1{
+ font-weight: bold;
+}
+
+.lib .p2{
+    font-weight: lighter;
+    font-size:15px;
+   }
+   .lib .btn{
+    color:black;
+    background-color: white;
+    font-weight: bold;
+   }
+
+
+.main_content{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    background-color: rgba(56, 54, 54, 0.54);
+    height:100vh;
+    flex:1;
+    color: white;
+    font-size: 18px;
+    box-shadow:0px 0px white;
+    border-radius: 10px;
+    margin: 10px;
+    overflow:auto;
+}
+
+.navbar{
+    position: sticky;
+    top: 0px;
+    background-color: rgb(29, 29, 29);
+    z-index:1000;
+}
+.navbar header{
+    margin-top:10px;
+    height:50px;
+    display: flex;
+    justify-content: end;
+}
+
+.navbar header button{
+    background-color:black;
+    color:white;
+    border-radius: 20px;
+    border-color:transparent ;
+}
+.head1{
+    display: flex;
+    flex: 1;
+}
+
+
+.head1 img{
+    background-color: black;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 100%;
+    height: 20px;
+}
+
+.head2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar .head2 .btn1{
+    color:black;
+    background-color:white;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 14px;
+
+ }
+
+ .navbar .btn2,.btn4,.btn3 {
+    margin:5px;
+ } 
+
+ .navbar  header .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover{
+    opacity: 1;
+    transform: scale(1.05,1.05);
+ }
+
+ .navbar header .bt3, .btn4{
+    opacity:0.8;
+ }
+ .navbar header .btn3{
+    background-color:black;
+ }
+
+ .navbar .con_title{
+    margin-top:10px;
+    height:50px;
+    display: flex;
+}
+.navbar .con_title button{
+    margin:10px 5px;
+    border-radius: 30px;
+    border-color: transparent;
+    /* font:30px; */
+    font-weight:bold;
+    color:white;
+    background-color:rgb(67, 65, 65);
+    transition: s;
+}
+
+.navbar .con_title button:active{
+    color:black;
+    background-color: white;
+    font-weight: normal;
+
+}
+
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin:0px;
+}
+
+
+.recent{
+    display:grid;
+    margin: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+   }
+
+.recent .item{
+     display: flex;
+     flex-direction: row;
+     padding:5px;
+     height: 45px;;
+     background-color: rgba(107, 100, 100, 0.1);
+    justify-content: center;
+    align-items: center;
+     border-radius: 10px;
+   }
+
+   .recent .item img{
+        height: 30px;
+        width: 30px;
+   }
+
+   .recent .rec_img{
+    display: flex;
+    align-items: center;
+   }
+ .recent .item .rec_ttl{
+    padding-left: 10px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.recent .item .player{
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    transition-duration: 0.5s;
+    visibility: hidden;
+}
+
+.recent .item :hover ~ .player{
+        visibility: visible;
+}
+.recent .item .player:hover{
+    visibility: visible;
+    transform: scale(1.07);
+}
+
+.recent .item:hover{
+    /* box-shadow: 0px 0px 4px black; */
+   background-color: rgba(87, 63, 63, 0.1); 
+}
+
+
+.album1, .album2, .album3{
+    margin:10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.perlizd{
+    display: flex;
+    margin: 10px 10px 0px;
+    align-items: center;
+}
+
+.perlizd div a {
+   color: white;
+   text-decoration: none;
+   font-size: 25px;
+    font-weight: bold;
+}
+
+.perlizd div{
+    
+    
+    font-weight: bold;
+    margin: 10px 10px 0px;
+    padding: 10px 0px 0px;
+    display: flex;
+    
+}
+.perlizd .show_all{
+    flex: 1;
+    justify-content: end;
+}
+.perlizd .show_all a{
+    font-size:15px;
+    opacity: 0.5;
+}
+.perlizd a:hover{
+    text-decoration: underline;
+}
+
+ .alb_card{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content:flex-start;
+    overflow:auto;
+    /* -ms-overflow-style: none;       internet explorer*/
+    /* scrollbar-width: none;       for firefox */
+}
+
+.alb_card::-webkit-scrollbar {
+    display: none;
+  }
+
+ .alb_card .card{
+    margin: 10px 0px;
+    padding: 10px;
+    display: flex;
+    /* height: 250px; */
+    flex-direction: column;
+    border-radius: 10px;
+    /* background-color: rgb(163, 26, 26); */
+    transition-duration: 0.5s;
+   
+}
+
+.alb_card .player{
+    position: relative;
+    top: -55px;
+    left: 150px;
+    height: 40px;
+    width: 40px;
+    z-index: 10;
+    visibility: hidden;
+    transition-duration: 0.5s;
+    visibility: hidden;
+}
+
+.alb_card .player img{
+    height: 40px;
+    width: 40px;
+    transform-duration: 1s;
+    transition-duration: 0.5s;
+}
+.card :hover ~.player{
+    visibility: visible;
+}
+.card .player:hover{
+    visibility: visible;
+    transform: scale(1.2);
+}
+/* .alb_card .player img:hover{
+     transform: scale(1.2); 
+} */
+.alb_card .card:hover{
+    background-color: rgba(107, 100, 100, 0.1);
+}
+
+.alb_card img{
+    border-radius: 8px;
+    height: 200px;
+    width: 200px;
+
+}
+
+ .alb_card .discription{
+   /* margin-top: 5px; */
+    line-height: 20px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.alb_card .discription div{
+    margin-top: 10px;
+    font-weight:lighter;
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+.album3 .alb_card .card img{
+    border-radius: 100px;
+}
+
+.music_play{
+    position:fixed;
+    bottom: 0px;
+    background-color: black;
+    height:70px;
+    width:100%;
+    display: flex;
+}
+
+.play{
+    
+    display: flex;
+    justify-content: space-evenly;
+    width: 100rem;
+    margin:5px;
+    /* background-color: red; */
+}
+
+.play .photo{
+    /* border-radius: 10px; */
+    display: flex;
+    align-items: center;
+}
+
+.play .photo img{
+    height: 55px;
+    width:55px;
+    border-radius: 5px;
+}
+
+.play button{
+    border-color:transparent;
+    background-color: black;
+}
+.play .song{
+    padding: 5px;
+    color: white;
+    line-height: 20px;
+}
+
+.play .song a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.play .img img{
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+
+.play .img img:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.playback_bar{
+    display: flex;
+    /* justify-content: space-evenly; */
+    width: 100rem;
+    margin: 0px 5px;
+    padding: 5px 10px;
+    /* background-color: red; */
+    flex-direction: column;
+}
+.playback_bar .icon{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 40px;
+    justify-content: space-evenly;
+}
+.playback_bar .icon button{
+    border-color:transparent;
+    background-color: black;
+    height:30px;
+}
+.playback_bar .icon img{
+    height: 14px;
+    width: 15px;
+}
+
+.playback_bar #pause img{
+    height: 30px;
+    width: 30px;
+}
+
+.playback_bar .player{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 40px;
+    justify-content: space-evenly;
+}
+
+.playback_bar .player div{
+    padding: 5px;
+    color: white;
+}
+
+.playback_bar .player progress{
+    cursor: pointer;
+    appearance:calc(0.2);
+}
+
+.control{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100rem;
+    margin: 0px 5px;
+    padding: 10px 10px;
+    /* background-color: red; */
+}
+
+.control button{
+    border-color:transparent;
+    background-color: black;
+    height:30px;
+}
+
+.control img{
+    height: 20px;
+    width: 20px;
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+.control img:hover{
+opacity: 1;
+transform: scale(1.2);
+cursor: pointer;
+}
+
+.control .lyrics img, .curr_song img, .volume img, .miniplayer img{ 
+    position: relative;
+    bottom: 6px;
+    height: 35px;
+    opacity: 0.8;
+    width: 25px;
+}
+.control .curr_song img:hover{
+    color: white;
+    cursor:not-allowed;
+    opacity:0.8;
+    transform:none;
+}
+
+.foot{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+@media (max-width:1000px){
+    .navbar .btn1{
+        display:none;
+    }
+}
+@media(max-width:1100px){
+    .recent{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:650px){
+    .sidebar{
+        display: none;
+    }
+}
